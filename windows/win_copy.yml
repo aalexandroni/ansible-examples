@@ -1,4 +1,4 @@
 - name: Copy a single file
   win_copy:
-    src: https://github.com/aalexandroni/ansible-examples/blob/master/windows/test.txt
     dest: C:\Temp\test.txt
+    content: abc123
