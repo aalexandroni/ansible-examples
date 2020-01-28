@@ -1,0 +1,13 @@
+Configuration TestUAT {
+    Node localhost {
+        File TestUAT {
+        	DestinationPath = "C:\Temp\test.txt"
+        	SourcePath = "https://github.com/aalexandroni/ansible-examples/blob/master/windows/test.txt"
+        	Ensure = "Present"
+        	Type = "File"
+        	Checksum = "modifiedDate"
+        	Force = $true
+        	MatchSource = $true
+        }
+    }
+}
